@@ -1,24 +1,27 @@
 <!--pages/category/index.wxml-->
-<view class="classify">
- 
-  <!--分类导航栏-->
-  <scroll-view class='left-navbar' scroll-y="true">
-    <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">{{item.screenName}}
+<view class="container">
+  <scroll-view class='nav_left' scroll-y='true'>
+    <block wx:for="{{cateItems}}" wx:key="{{index}}">
+      <view class="nav_left_items {{curNav==item.cate_id?'active':''}}" bindtap="switchRightTab" data-index='{{index}}' data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view class="nav_right" scroll-y="true">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{cateItems[curIndex].children.length>0}}">
+      <block wx:for="{{cateItems[curIndex].children}}" wx:key="{{index}}">
+        <view class="nav_right_items">
+        <!--界面跳转 -->
+          <navigator url="../../detail/detail">
+            <image src="{{item.image}}"></image>
+            <text>{{item.name}}</text>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--如果无数据，则显示数据-->
+    <view class="nocate" wx:else>
+      <image src="../../images/nodata.png"></image>
+      <text>该分类暂无数据</text>
     </view>
   </scroll-view>
-  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
-    <!--顶部图片-->
-    <view class="goods-banner">
-      <image class="img-banner" src="{{childrenArray.showImageUrl}}" wx:if="{{childrenArray.showImageUrl}}" mode="scaleToFill"></image>
-    </view>
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
-    </view>
-  </scroll-view> 
 </view>
-

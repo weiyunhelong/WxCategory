@@ -1,9 +1,8 @@
 {
   "pages":[
-    "pages/kind/index",
     "pages/category/index",
+    "pages/kind/index",
     "pages/kind/detail",
-    "pages/test/index",
     "pages/index/index",
     "pages/logs/logs"
   ],

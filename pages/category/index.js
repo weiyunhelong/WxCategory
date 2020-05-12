@@ -5,76 +5,96 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab: 0, //对应样式变化
-    scrollTop: 0, //用作跳转后右侧视图回到顶部
-    screenArray: [{
-        screenId: 1,
-        screenName: '菜单1'
+    cateItems:[
+      {
+        cate_id:1,
+        cate_name:'洗护',
+        children: [
+          { 
+            child_id: 1, 
+            name: '洁面皂', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg" 
+          }, 
+          { 
+            child_id: 2, 
+            name: '卸妆', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg"  
+          }
+        ]
       },
       {
-        screenId: 2,
-        screenName: '菜单2'
+        cate_id:2,
+        cate_name:'生鲜',
+        children: [
+          { 
+            child_id: 1, 
+            name: '叶子类', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg" 
+          }, 
+          { 
+            child_id: 2, 
+            name: '根茎类', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg"  
+          },
+          { 
+            child_id: 3, 
+            name: '菌菇类', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg" 
+          }, 
+          { 
+            child_id: 4, 
+            name: '调味类', 
+            image: "http://hqxz.oss-cn-beijing.aliyuncs.com/%E5%93%81%E7%89%8Clogo%2F%E6%8A%A4%E8%82%A4%E7%BE%8E%E4%BD%93%2F%E9%9B%AA%E8%8A%B1%E7%A7%80.jpg"  
+          }
+        ]
       },
       {
-        screenId: 3,
-        screenName: '菜单3'
+        cate_id:3,
+        cate_name:'食品'
       },
       {
-        screenId: 4,
-        screenName: '菜单4'
+        cate_id: 4,
+        cate_name: '女装'
       },
       {
-        screenId: 5,
-        screenName: '菜单5'
+        cate_id: 5,
+        cate_name: '百货'
       },
       {
-        screenId: 6,
-        screenName: '菜单6'
+        cate_id: 6,
+        cate_name: '母婴'
+      },
+      {
+        cate_id: 7,
+        cate_name: '手机'
+      },
+      {
+        cate_id: 8,
+        cate_name: '鞋靴'
+      },
+      {
+        cate_id: 9,
+        cate_name: '运动'
+      },
+      {
+        cate_id: 10,
+        cate_name: '美家'
+      },
+      {
+        cate_id: 11,
+        cate_name: '男装'
+      },
+      {
+        cate_id: 12,
+        cate_name: '水果'
+      },
+      {
+        cate_id: 13,
+        cate_name: '电子'
       }
-    ], //左侧导航栏内容
-    screenId: "", //后台查询需要的字段
-    childrenArray: {
-      showImageUrl: 'http://img3.imgtn.bdimg.com/it/u=1798233457,4143585420&fm=26&gp=0.jpg',
-      childrenScreenArray: [{
-          screenName: '休闲零食',
-          childrenScreenArray: [{
-              screenId: 1,
-              showImageUrl: 'http://img0.imgtn.bdimg.com/it/u=921197123,1741426939&fm=26&gp=0.jpg',
-              screenName: '糖果'
-            },
-            {
-              screenId: 2,
-              showImageUrl: 'http://img3.imgtn.bdimg.com/it/u=46574630,3801160495&fm=26&gp=0.jpg',
-              screenName: '新疆核桃'
-            },
-            {
-              screenId: 2,
-              showImageUrl: 'http://img3.imgtn.bdimg.com/it/u=46574630,3801160495&fm=26&gp=0.jpg',
-              screenName: '新疆核桃'
-            },
-            {
-              screenId: 2,
-              showImageUrl: 'http://img3.imgtn.bdimg.com/it/u=46574630,3801160495&fm=26&gp=0.jpg',
-              screenName: '新疆核桃'
-            },
-          ]
-        },
-        {
-          screenName: '手机数码',
-          childrenScreenArray: [{
-              screenId: 1,
-              showImageUrl: 'http://img0.imgtn.bdimg.com/it/u=1138662413,2627006305&fm=26&gp=0.jpg',
-              screenName: 'vivo手机'
-            },
-            {
-              screenId: 1,
-              showImageUrl: 'http://img0.imgtn.bdimg.com/it/u=1138662413,2627006305&fm=26&gp=0.jpg',
-              screenName: 'vivo手机'
-            },
-          ]
-        },
-      ]
-    }, //右侧内容
+    ],
+    curNav:1,
+    curIndex:0
   },
 
   /**
@@ -83,18 +103,12 @@ Page({
   onLoad: function (options) {
 
   },
-  //点击左侧的tab
-  navbarTap: function (e) {
-    var that = this;
- console.log("AAAA",e);
-    that.setData({
-      currentTab: e.currentTarget.id, //按钮CSS变化
-      screenId: e.currentTarget.dataset.screenid,
-      scrollTop: 0, //切换导航后，控制右侧滚动视图回到顶部
+  switchRightTab:function(e){
+    let id = e.target.dataset.id,index=e.target.dataset.index;
+    this.setData({
+      curNav:id,
+      curIndex:index
     })
-    //刷新右侧内容的数据
-    var screenId = that.data.screenId;
-
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
