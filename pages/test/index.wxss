@@ -1,0 +1,9 @@
+/* pages/test/index.wxss */
+page{
+  background:url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1725689454,2409354619&fm=26&gp=0.jpg) no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  overflow: auto;
+}

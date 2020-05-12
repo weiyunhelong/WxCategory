@@ -1,0 +1,45 @@
+<svg id="euert7bzv1fr1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 115 110" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+	<style>
+		<![CDATA[
+		#euert7bzv1fr7_tr {
+			animation: euert7bzv1fr7_tr__tr 3000ms linear infinite normal forwards
+		}
+
+		@keyframes euert7bzv1fr7_tr__tr {
+			0% {
+				transform: translate(57px, 43.500000px) rotate(0deg);
+				animation-timing-function: cubic-bezier(0.645000, 0.045000, 0.355000, 1)
+			}
+
+			100% {
+				transform: translate(57px, 43.500000px) rotate(360deg)
+			}
+		}
+		]]>
+	</style>
+	<g id="euert7bzv1fr2">
+		<g id="euert7bzv1fr3" transform="matrix(1 0 0 1 -226 -208)">
+			<g id="euert7bzv1fr4" transform="matrix(1 0 0 1 226 208)">
+				<rect id="euert7bzv1fr5" width="115" height="110" rx="8" ry="0" fill="rgb(0,0,0)" fill-opacity="0.6" fill-rule="evenodd" stroke="none" stroke-width="1" /><text id="euert7bzv1fr6" dx="0" dy="0" font-family="PingFangSC-Medium, &quot;PingFang SC&quot;" font-size="12" transform="matrix(1 0 0 1 40 96)" fill="rgb(255,255,255)" fill-rule="evenodd" stroke="none" stroke-width="1"><![CDATA[
+                    加载中
+                ]]></text>
+				<g id="euert7bzv1fr7_tr" transform="translate(57,43.500000) rotate(0)">
+					<g id="euert7bzv1fr7" transform="translate(-18,-18.500000)">
+						<rect id="euert7bzv1fr8" width="10" height="3" rx="1.500000" ry="0" transform="matrix(1 0 0 1 26 17)" fill="rgb(255,255,255)" fill-opacity="0.9" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr9" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0.86602500000000 0.50000000000000 -0.50000000000000 0.86602500000000 25.67819425750000 21.20093750000000)" fill="rgb(255,255,255)" fill-opacity="0.05" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr10" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0.50000000000000 0.86602500000000 -0.86602500000000 0.50000000000000 23.29910574250000 24.67817750000000)" fill="rgb(255,255,255)" fill-opacity="0.1" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr11" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0 1 -1 0 19.50000000000000 26.50000000000000)" fill="rgb(255,255,255)" fill-opacity="0.15" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr12" width="10" height="3" rx="1.500000" ry="0" transform="matrix(-0.50000000000000 0.86602500000000 -0.86602500000000 -0.50000000000000 15.29910574250000 26.17821250000000)" fill="rgb(255,255,255)" fill-opacity="0.2" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr13" width="10" height="3" rx="1.500000" ry="0" transform="matrix(-0.86602500000000 0.50000000000000 -0.50000000000000 -0.86602500000000 11.82177023825000 23.79904750000000)" fill="rgb(255,255,255)" fill-opacity="0.25" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr14" width="10" height="3" rx="1.500000" ry="0" transform="matrix(-1 0 -0 -1 10 20)" fill="rgb(255,255,255)" fill-opacity="0.3" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr15" width="10" height="3" rx="1.500000" ry="0" transform="matrix(-0.86602500000000 -0.50000000000000 0.50000000000000 -0.86602500000000 10.32180023825000 15.79900250000000)" fill="rgb(255,255,255)" fill-opacity="0.4" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr16" width="10" height="3" rx="1.500000" ry="0" transform="matrix(-0.50000000000000 -0.86602500000000 0.86602500000000 -0.50000000000000 12.70092976175000 12.32180250000000)" fill="rgb(255,255,255)" fill-opacity="0.5" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr17" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0 -1 1 0 16.50000000000000 10.50000000000000)" fill="rgb(255,255,255)" fill-opacity="0.6" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr18" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0.50000000000000 -0.86602500000000 0.86602500000000 0.50000000000000 20.70095976175000 10.82184750000000)" fill="rgb(255,255,255)" fill-opacity="0.75" fill-rule="evenodd" stroke="none" stroke-width="1" />
+						<rect id="euert7bzv1fr19" width="10" height="3" rx="1.500000" ry="0" transform="matrix(0.86602500000000 -0.50000000000000 0.50000000000000 0.86602500000000 24.17816425750000 13.20101250000000)" fill="rgb(255,255,255)" fill-opacity="0.8" fill-rule="evenodd" stroke="none" stroke-width="1" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
